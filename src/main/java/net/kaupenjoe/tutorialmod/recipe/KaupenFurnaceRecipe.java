@@ -13,7 +13,7 @@ public class KaupenFurnaceRecipe extends AbstractCookingRecipe {
 
     @Override
     public RecipeSerializer<?> getSerializer() {
-        return null;
+        return KaupenFurnaceRecipe.Serializer.INSTANCE;
     }
 
     public static class Type implements RecipeType<KaupenFurnaceRecipe> {
