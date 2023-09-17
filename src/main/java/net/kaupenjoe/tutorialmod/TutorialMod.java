@@ -3,6 +3,7 @@ package net.kaupenjoe.tutorialmod;
 import net.fabricmc.api.ModInitializer;
 
 import net.kaupenjoe.tutorialmod.block.ModBlocks;
+import net.kaupenjoe.tutorialmod.block.entity.ModBlockEntities;
 import net.kaupenjoe.tutorialmod.item.ModItems;
 import net.kaupenjoe.tutorialmod.recipe.ModRecipes;
 import net.kaupenjoe.tutorialmod.screen.ModScreenHandlers;
@@ -17,6 +18,8 @@ public class TutorialMod implements ModInitializer {
 	public void onInitialize() {
 		ModItems.registerModItems();
 		ModBlocks.registerBlocks();
+
+		ModBlockEntities.registerBlockEntities();
 
 		ModScreenHandlers.registerScreenHandlers();
 		ModRecipes.registerRecipes();

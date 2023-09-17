@@ -17,6 +17,9 @@ public class ModBlocks {
     public static final Block FIVE_BY_FIVE_CRAFTING = registerBlock("five_by_five_crafting",
             new FiveByFiveCraftingBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
 
+    public static final Block KAUPEN_FURNACE = registerBlock("kaupen_furnace",
+            new KaupenFurnaceBlock(FabricBlockSettings.copyOf(Blocks.STONE)));
+
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(TutorialMod.MOD_ID, name), block);
