@@ -166,6 +166,16 @@ public class FiveByFiveCraftingRecipe extends ShapedRecipe {
         }
     }
 
+    @Override
+    public RecipeType<?> getType() {
+        return Type.INSTANCE;
+    }
+
+    @Override
+    public RecipeSerializer<?> getSerializer() {
+        return Serializer.INSTANCE;
+    }
+
     public static class Type implements RecipeType<FiveByFiveCraftingRecipe> {
         public static final FiveByFiveCraftingRecipe.Type INSTANCE = new Type();
         public static final String ID = "five_by_five_crafting";
